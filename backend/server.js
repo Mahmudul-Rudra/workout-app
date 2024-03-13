@@ -27,6 +27,7 @@ mongoose
   .then(() => {
     //listen on http://localhost
     app.listen(process.env.PORT, () => {
+      console.log("Connected to Database");
       console.log("Server is running on port " + process.env.PORT + "...");
     });
   })
